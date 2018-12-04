@@ -12,4 +12,4 @@ ENV PATH="/tools/node_modules/mdpdf/bin:${PATH}"
 COPY style.css /tools/style.css
 
 WORKDIR /source
-ENTRYPOINT [ "mdpdf", "--style=/tools/style.css", "--border=10mm", "--debug=true" ]
+ENTRYPOINT [ "mdpdf" ]
