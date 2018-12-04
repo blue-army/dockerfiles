@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-body {
+ body {
     font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
     font-size: 20px;
     padding: 0 12px;
@@ -347,8 +347,8 @@ pre {
 }
 
 pre:not(.hljs) {
-    padding: 23px;
-    line-height: 19px;
+    padding: 8px;
+    line-height: 12px;
 }
 
 blockquote {
@@ -377,4 +377,30 @@ blockquote {
     font-size: 8px;
     line-height: 14px;
     font-family: "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+.markdown-body table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    margin: 1em auto;
+}
+
+.markdown-body table th {
+    background-color: rgb(224, 241, 247);
+}
+
+.markdown-body table th, .markdown-body table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+.markdown-body table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+pre pre {
+    border: 0px;
 }
