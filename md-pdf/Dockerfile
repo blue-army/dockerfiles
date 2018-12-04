@@ -11,4 +11,4 @@ RUN npm install mdpdf && \
 ENV PATH="/tools/node_modules/mdpdf/bin:${PATH}"
 
 WORKDIR /source
-CMD [ "/bin/bash" ]
+ENTRYPOINT [ "mdpdf" ]
