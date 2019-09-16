@@ -328,7 +328,7 @@ async function exportPdf(data, filename, type, uri) {
             await browser.close();
 
             // delete temporary file
-            var debug = true;
+            var debug = false;
             if (!debug) {
                 if (isExistsPath(tmpfilename)) {
                     deleteFile(tmpfilename);
